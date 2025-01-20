@@ -6,26 +6,22 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface AppHome {
-    }
-    interface AppProfile {
-        "name": string;
+    interface AppRegistrationForm {
     }
     interface AppRoot {
     }
+    interface FocusNext {
+        "nextInputId": string;
+    }
+    interface InputNumeric {
+    }
 }
 declare global {
-    interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
+    interface HTMLAppRegistrationFormElement extends Components.AppRegistrationForm, HTMLStencilElement {
     }
-    var HTMLAppHomeElement: {
-        prototype: HTMLAppHomeElement;
-        new (): HTMLAppHomeElement;
-    };
-    interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {
-    }
-    var HTMLAppProfileElement: {
-        prototype: HTMLAppProfileElement;
-        new (): HTMLAppProfileElement;
+    var HTMLAppRegistrationFormElement: {
+        prototype: HTMLAppRegistrationFormElement;
+        new (): HTMLAppRegistrationFormElement;
     };
     interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
     }
@@ -33,33 +29,50 @@ declare global {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
+    interface HTMLFocusNextElement extends Components.FocusNext, HTMLStencilElement {
+    }
+    var HTMLFocusNextElement: {
+        prototype: HTMLFocusNextElement;
+        new (): HTMLFocusNextElement;
+    };
+    interface HTMLInputNumericElement extends Components.InputNumeric, HTMLStencilElement {
+    }
+    var HTMLInputNumericElement: {
+        prototype: HTMLInputNumericElement;
+        new (): HTMLInputNumericElement;
+    };
     interface HTMLElementTagNameMap {
-        "app-home": HTMLAppHomeElement;
-        "app-profile": HTMLAppProfileElement;
+        "app-registration-form": HTMLAppRegistrationFormElement;
         "app-root": HTMLAppRootElement;
+        "focus-next": HTMLFocusNextElement;
+        "input-numeric": HTMLInputNumericElement;
     }
 }
 declare namespace LocalJSX {
-    interface AppHome {
-    }
-    interface AppProfile {
-        "name"?: string;
+    interface AppRegistrationForm {
     }
     interface AppRoot {
     }
+    interface FocusNext {
+        "nextInputId"?: string;
+    }
+    interface InputNumeric {
+    }
     interface IntrinsicElements {
-        "app-home": AppHome;
-        "app-profile": AppProfile;
+        "app-registration-form": AppRegistrationForm;
         "app-root": AppRoot;
+        "focus-next": FocusNext;
+        "input-numeric": InputNumeric;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
-            "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
+            "app-registration-form": LocalJSX.AppRegistrationForm & JSXBase.HTMLAttributes<HTMLAppRegistrationFormElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "focus-next": LocalJSX.FocusNext & JSXBase.HTMLAttributes<HTMLFocusNextElement>;
+            "input-numeric": LocalJSX.InputNumeric & JSXBase.HTMLAttributes<HTMLInputNumericElement>;
         }
     }
 }

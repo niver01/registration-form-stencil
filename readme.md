@@ -1,41 +1,38 @@
-# Stencil App Starter
+# **Formulario de Registro - Implementación en StencilJS**
 
-Stencil is a compiler for building fast web apps using Web Components.
+## Enlace de página
 
-Stencil combines the best concepts of the most popular frontend frameworks into a compile-time rather than run-time tool.  Stencil takes TypeScript, JSX, a tiny virtual DOM layer, efficient one-way data binding, an asynchronous rendering pipeline (similar to React Fiber), and lazy-loading out of the box, and generates 100% standards-based Web Components that run in any browser supporting the Custom Elements v1 spec.
+[Ir al enlace](https://678d735504bb72a99309b39d--incomparable-naiad-778dbd.netlify.app/)
 
-Stencil components are just Web Components, so they work in any major framework or with no framework at all. In many cases, Stencil can be used as a drop in replacement for traditional frontend frameworks given the capabilities now available in the browser, though using it as such is certainly not required.
+# **Reporte de Accesibilidad - Cumplimiento de WCAG 2.1**
 
-Stencil also enables a number of key capabilities on top of Web Components, in particular Server Side Rendering (SSR) without the need to run a headless browser, pre-rendering, and objects-as-properties (instead of just strings).
+### **1. Principio: Perceptible**
 
-## Getting Started
+- **Etiquetas accesibles:** Uso de `<label>` asociado a los campos mediante `for`.
+- **Mensajes de error accesibles:** Implementados con `aria-describedby` y anunciados dinámicamente con `aria-live="polite"`.
+- **Contraste:** Verificado con herramientas para cumplir con WCAG AA.
 
-To start a new project using Stencil, clone this repo to a new directory:
+### **2. Principio: Operable**
 
-```bash
-npm init stencil app
-```
+- **Navegación por teclado:** Fluida y con orden lógico gracias a `<focus-next></focus-next>`.
+- **Retroalimentación visual:** Errores destacados mediante `is-invalid` y mensajes claros.
 
-and run:
+### **3. Principio: Comprensible**
 
-```bash
-npm start
-```
+- **Validaciones en tiempo real:** Mensajes claros y criterios específicos visibles (e.g., requisitos de contraseña).
+- **Semántica clara:** Uso de `<fieldset>` y `<legend>` para agrupar campos relacionados.
 
-To build the app for production, run:
+### **4. Principio: Robusto**
 
-```bash
-npm run build
-```
+- **Compatibilidad:** Con **NVDA** y herramientas como **WAVE** y **Lighthouse**.
+- **HTML semántico:** Uso de etiquetas estándar y atributos ARIA (`aria-describedby`, `aria-invalid`, `aria-live`).
 
-To run the unit tests once, run:
+### **Resultados de Pruebas**
 
-```
-npm test
-```
+- **Herramientas utilizadas:**
+  - **WAVE:** Sin errores críticos.
+  - **Lighthouse:** Cumple con WCAG 2.1 AA.
 
-To run the unit tests and watch for file changes during development, run:
+### **Conclusión**
 
-```
-npm run test.watch
-```
+La solución cumple con los estándares **WCAG 2.1 AA**, garantizando una experiencia accesible, clara y robusta para todos los usuarios.
