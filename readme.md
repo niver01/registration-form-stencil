@@ -2,7 +2,7 @@
 
 ## Enlace de página
 
-[Ir al enlace](https://678d735504bb72a99309b39d--incomparable-naiad-778dbd.netlify.app/)
+[Ir al enlace](https://678ece94e316c0461a60002b--delightful-malabi-46389f.netlify.app/)
 
 # **Reporte de Accesibilidad - Cumplimiento de WCAG 2.1**
 
@@ -36,3 +36,5 @@
 ### **Conclusión**
 
 La solución cumple con los estándares **WCAG 2.1 AA**, garantizando una experiencia accesible, clara y robusta para todos los usuarios.
+
+![alt text](image.png)
