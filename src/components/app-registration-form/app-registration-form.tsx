@@ -130,6 +130,8 @@ export class AppRegistrationForm {
                   value={this.registrationForm.firstName}
                   onBlur={event => this.handleInputBlur(event, 'firstName')}
                   onInput={event => this.handleInputChange(event, 'firstName')}
+                  required
+                  aria-required="true"
                   aria-describedby="firstName-error"
                   aria-invalid={this.errorMessages.firstName ? 'true' : null}
                   class={{ 'is-invalid': this.errorMessages.firstName && this.errorMessages.firstName != '' }}
@@ -147,6 +149,8 @@ export class AppRegistrationForm {
                   value={this.registrationForm.lastName}
                   onBlur={event => this.handleInputChange(event, 'lastName')}
                   onInput={event => this.handleInputChange(event, 'lastName')}
+                  required
+                  aria-required="true"
                   aria-describedby="firstName-error"
                   aria-invalid={this.errorMessages.lastName ? 'true' : null}
                   class={{ 'is-invalid': this.errorMessages.lastName && this.errorMessages.lastName != '' }}
@@ -168,6 +172,8 @@ export class AppRegistrationForm {
                 value={this.registrationForm.email}
                 onBlur={event => this.handleInputChange(event, 'email')}
                 onInput={event => this.handleInputChange(event, 'email')}
+                required
+                aria-required="true"
                 aria-describedby="email-error"
                 aria-invalid={this.errorMessages.email ? 'true' : null}
                 class={{ 'is-invalid': this.errorMessages.email && this.errorMessages.email != '' }}
@@ -190,6 +196,8 @@ export class AppRegistrationForm {
                   vocab={this.registrationForm.documentType}
                   onBlur={event => this.handleInputChange(event, 'documentType')}
                   onInput={event => this.handleInputChange(event, 'documentType')}
+                  required
+                  aria-required="true"
                   aria-describedby="documentType-error"
                   aria-invalid={this.errorMessages.documentType ? 'true' : null}
                   class={{ 'is-invalid': this.errorMessages.documentType && this.errorMessages.documentType != '' }}
@@ -214,6 +222,8 @@ export class AppRegistrationForm {
                     value={this.registrationForm.documentNumber}
                     onBlur={event => this.handleInputChange(event, 'documentNumber')}
                     onInput={event => this.handleInputChange(event, 'documentNumber')}
+                    required
+                    aria-required="true"
                     aria-describedby="documentNumber-error"
                     aria-invalid={this.errorMessages.documentNumber ? 'true' : null}
                     class={{ 'is-invalid': this.errorMessages.documentNumber && this.errorMessages.documentNumber != '' }}
@@ -232,6 +242,8 @@ export class AppRegistrationForm {
                   vocab={this.registrationForm.gender}
                   onBlur={event => this.handleInputChange(event, 'gender')}
                   onInput={event => this.handleInputChange(event, 'gender')}
+                  required
+                  aria-required="true"
                   aria-describedby="gender-error"
                   aria-invalid={this.errorMessages.gender ? 'true' : null}
                   class={{ 'is-invalid': this.errorMessages.gender && this.errorMessages.gender != '' }}
@@ -253,6 +265,8 @@ export class AppRegistrationForm {
                   vocab={this.registrationForm.country}
                   onBlur={event => this.handleInputChange(event, 'country')}
                   onInput={event => this.handleInputChange(event, 'country')}
+                  required
+                  aria-required="true"
                   aria-describedby="country-error"
                   aria-invalid={this.errorMessages.country ? 'true' : null}
                   class={{ 'is-invalid': this.errorMessages.country && this.errorMessages.country != '' }}
@@ -281,6 +295,8 @@ export class AppRegistrationForm {
                   value={this.registrationForm.phone}
                   onBlur={event => this.handleInputChange(event, 'phone')}
                   onInput={event => this.handleInputChange(event, 'phone')}
+                  required
+                  aria-required="true"
                   aria-describedby="phone-error"
                   aria-invalid={this.errorMessages.phone ? 'true' : null}
                   class={{ 'is-invalid': this.errorMessages.phone && this.errorMessages.phone != '' }}
@@ -299,6 +315,8 @@ export class AppRegistrationForm {
               value={this.registrationForm.password}
               onBlur={event => this.handleInputChange(event, 'password')}
               onInput={event => this.handleInputChange(event, 'password')}
+              required
+              aria-required="true"
               aria-describedby="password-error"
               aria-invalid={this.errorMessages.password ? 'true' : null}
               class={{ 'is-invalid': this.errorMessages.password && this.errorMessages.password != '' }}
