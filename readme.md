@@ -2,7 +2,7 @@
 
 ## Enlace de página
 
-[Ir al enlace](https://678ece94e316c0461a60002b--delightful-malabi-46389f.netlify.app/)
+[Ir al enlace](https://delightful-malabi-46389f.netlify.app/)
 
 # **Reporte de Accesibilidad - Cumplimiento de WCAG 2.1**
 
